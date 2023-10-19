@@ -1,0 +1,263 @@
+* {
+  overflow-x: hidden;
+}
+
+.page-container {
+  width: auto;
+  height: 100vh;
+  border: 2.5px solid black;
+  background-color: rgba(231, 204, 204, 0.479);
+}
+
+#head-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./img/background-bamboo.jpg);
+  background-size: cover;
+  margin: .5rem;
+  width: auto;
+  height: 15rem;
+  border: 1px solid rgb(87, 38, 38);
+  padding: 1.35rem;
+  opacity: .75;
+  z-index: 2;
+}
+
+.container {
+  position: relative; /* Add this */
+  width: 13.5rem;
+  height: 13.5rem;
+  border: 1.5px inset rgb(87, 38, 38);
+  padding: 1.35rem;
+  margin: .5rem;
+  background: url(./img/wood-background.jpg);
+  background-size: contain;
+  opacity: .70; /* Change this to reduce the opacity */
+}
+
+.container .image-text { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  opacity: 1;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.container .image {
+  border: 2px solid rgb(87, 38, 38);
+  width: 13rem;
+  height: 13rem;
+  opacity: .85;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  overflow-y: auto; /* Change this to "auto" to show the scrollbar */
+  overflow-x: auto;
+}
+
+.container-grid::-webkit-scrollbar {
+  width: 12px;
+}
+
+.container-grid::-webkit-scrollbar-track {
+  background-color: rgba(235, 222, 222, 0.678);
+}
+
+.container-grid::-webkit-scrollbar-thumb {
+  background-color: rgba(122, 87, 87, 0.897);
+  border-radius: 6px;
+}
+
+.container-grid::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(134, 57, 57, 0.897);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: (134, 57, 57, 0.979);
+  border-radius: 4%;
+  padding: .35rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-image: url(./img/wood-background-2.avif);
+  opacity: .92rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: .25rem;
+  padding: .55rem;
+  gap: .65rem;
+}
+
+nav li {
+  margin: 0 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.76); /* Add a light background to increase visibility */
+  padding: 0.5rem; /* Add padding to increase visibility */
+  border-radius: 4%;
+}
+
+nav li:hover {
+  color: rgba(134, 57, 57, 0.979);
+  cursor: pointer;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.header-name {
+  font-size: 6rem;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-family: 'Ysabeau Office', sans-serif;
+  opacity: 1;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.76); /* Add a light background to increase visibility */
+  padding: 0.5rem; /* Add padding to increase visibility */
+  border-radius: 4%;
+}
+
+.shop-container {
+  text-align: center;
+  font-size: 1.25rem;
+  color: rgb(0, 0, 0);
+  font-family: 'Ysabeau Office', sans-serif;
+  opacity: 1;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a light background to increase visibility */
+  padding: 0.25rem; /* Add padding to increase visibility */
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  pad: .5rem;
+  overflow-x: hidden;
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 65%;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(./img/plant-background.jpg);
+  background-size: cover;
+  border-bottom: 2px outset black;
+  opacity: .858;
+}
+
+.about-img {
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+}
+
+.about-img:first-child {
+  margin-right: 1rem;
+}
+
+.about-us-container p {
+  width: 50%;
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.articles-container {
+  display: flex;
+  align-items: center;
+  height: 35%;
+  width: auto;
+  overflow-x: auto;
+  background-color: rgba(134, 108, 108, 0.767);
+}
+
+#order-nav {
+  color: rgb(141, 38, 38);
+}
+
+.order-btn {
+  border: .4rem solid rgba(122, 87, 87, 0.897);
+  border-radius: 4%;
+  padding: 2.5rem;
+  background-color: transparent;
+  font-family: 'Ysabeau Office', sans-serif;
+  font-size: 1.25rem;
+  margin: 1rem;
+}
+
+.order-btn:hover {
+  background-color: rgba(134, 108, 108, 0.582);
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.dark-text {
+  background-color: rgba(134, 108, 108, 0.582);
+  padding: .3rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.article {
+  padding: 3rem;
+  margin-right: 4px;
+  border: 1px solid black;
+  height: 55%;
+  width: 15%;
+  text-align: center;
+  background-color: rgba(245, 228, 228, 0.603);
+}
+
+.article-btn {
+    border: .1rem solid rgba(122, 87, 87, 0.897);
+    border-radius: 4%;
+    padding: 1.5rem;
+    background-color: transparent;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 1.35rem;
+}
+
+.article-btn:hover {
+  background-color: rgba(122, 87, 87, 0.897);
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.article::-webkit-scrollbar {
+  width: 7px;
+}
+
+.article::-webkit-scrollbar-track {
+  background-color: rgba(235, 222, 222, 0.678);
+}
+
+.article::-webkit-scrollbar-thumb {
+  background-color: rgba(122, 87, 87, 0.897);
+  border-radius: 4px;
+}
+
+.articles-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(134, 57, 57, 0.897);
+}
